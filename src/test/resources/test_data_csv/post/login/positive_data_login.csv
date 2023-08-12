@@ -1,0 +1,2 @@
+NameTest,               Status Code,   Email,                  Password,   ExpectedResultToken
+Ввод корректных данных, 200,           eve.holt@reqres.in,     cityslicka, QpwL5tke4Pnpja7X4

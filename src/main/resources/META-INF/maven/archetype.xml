@@ -1,0 +1,9 @@
+<archetype>
+  <id>test_work_java_REST_Assured</id>
+  <sources>
+    <source>src/main/java/App.java</source>
+  </sources>
+  <testSources>
+    <source>src/tests/java/AppTest.java</source>
+  </testSources>
+</archetype>

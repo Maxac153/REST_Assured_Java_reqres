@@ -1,0 +1,4 @@
+NameTest,               Status Code,    NumberPage   ExpectedResult
+Коректные данные,       200,            2,           6
+Пустой массив данных,   200,            100,         0
+Пустой массив данных,   200,            -1,          0

@@ -1,0 +1,2 @@
+NameTest,               Status Code,   Email,                  Password,   ExpectedResultId,    ExpectedResultToken
+Ввод корректных данных, 200,           eve.holt@reqres.in,     123,        4,                   QpwL5tke4Pnpja7X4

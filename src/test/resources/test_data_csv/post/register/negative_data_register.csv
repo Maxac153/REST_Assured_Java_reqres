@@ -1,0 +1,4 @@
+NameTest,               Status Code,   Email,                  Password,   ExpectedResult,
+Некорректный email,     400,           holt@reqres.in,         132,        Note: Only defined users succeed registration,
+Пропуск пароля,         400,           eve.holt@reqres.in,     ,           Missing password,
+Пропуск email,          400,           ,                       123,        Missing email or username,
