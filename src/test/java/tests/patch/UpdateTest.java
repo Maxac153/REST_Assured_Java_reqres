@@ -9,7 +9,7 @@ import specifications.Specifications;
 import api.patch.update.response.SuccessUpdate;
 import static io.restassured.RestAssured.given;
 
-public class Update {
+public class UpdateTest {
     @DisplayName("Проверка регистрации позитивные сценарии")
     @ParameterizedTest(name = "Test {index}: {0}")
     @CsvFileSource(resources = "/test_data_csv/patch/update/positive_data_update.csv", numLinesToSkip = 1)
@@ -20,7 +20,7 @@ public class Update {
         SuccessUpdate successUserReg = given()
                 .body(peopleSecond)
                 .when()
-                .patch("api/users/2")
+                .patch(ConstantParameters.getUrlUpdatePatch())
                 .then()
                 .log().body()
                 .extract().as(SuccessUpdate.class);

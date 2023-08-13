@@ -24,7 +24,7 @@ public class LoginTest {
         SuccessLogin successUserLogin = given()
                 .body(peopleSecond)
                 .when()
-                .post("api/login")
+                .post(ConstantParameters.getUrlLogin())
                 .then()
                 .log().body()
                 .extract().as(SuccessLogin.class);
@@ -42,7 +42,7 @@ public class LoginTest {
         UnsuccessLogin UnsuccessUserReg = given()
                 .body(peopleSecond)
                 .when()
-                .post("api/login")
+                .post(ConstantParameters.getUrlLogin())
                 .then()
                 .log().body()
                 .extract().as(UnsuccessLogin.class);

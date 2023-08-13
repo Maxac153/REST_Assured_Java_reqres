@@ -12,6 +12,6 @@ public class DeleteUserTest {
     @DisplayName("Проверка удаления пользователя")
     public void deleteUserTest() {
         Specifications.installSpecification(ConstantParameters.getBaseURL(), 204);
-        given().when().delete("api/users?page=2");
+        given().when().delete(ConstantParameters.getUrlDelete());
     }
 }

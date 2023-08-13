@@ -20,7 +20,7 @@ public class SingleUserTest {
 
         SingleUser user = given()
                 .when()
-                .get("/api/users/" + numberPage)
+                .get(ConstantParameters.getUrlSingleUser() + numberPage)
                 .then()
                 .log().all()
                 .extract().body().jsonPath().getObject("", SingleUser.class);

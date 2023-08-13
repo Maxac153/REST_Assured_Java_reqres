@@ -23,7 +23,7 @@ public class RegisterTest {
         SuccessRegister successUserReg = given()
                 .body(peopleSecond)
                 .when()
-                .post("api/register")
+                .post(ConstantParameters.getUrlRegister())
                 .then()
                 .log().body()
                 .extract().as(SuccessRegister.class);

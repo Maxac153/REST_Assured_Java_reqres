@@ -22,7 +22,7 @@ public class UpdateTest {
         SuccessUpdate successUserReg = given()
                 .body(peopleSecond)
                 .when()
-                .put("api/users/2")
+                .put(ConstantParameters.getUrlUpdatePut())
                 .then()
                 .log().body()
                 .extract().as(SuccessUpdate.class);

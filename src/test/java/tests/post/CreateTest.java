@@ -22,7 +22,7 @@ public class CreateTest {
         SuccessCreate successUserCreate = given()
                 .body(peopleSecond)
                 .when()
-                .post("/api/users")
+                .post(ConstantParameters.getUrlCreate())
                 .then()
                 .log().body()
                 .extract().as(SuccessCreate.class);

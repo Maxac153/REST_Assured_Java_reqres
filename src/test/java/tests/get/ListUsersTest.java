@@ -18,7 +18,7 @@ public class ListUsersTest {
         Specifications.installSpecification(ConstantParameters.getBaseURL(), Integer.parseInt(statusCode));
         ListUsers users = given()
                 .when()
-                .get("api/users?page=" + numberPage)
+                .get(ConstantParameters.getUrlListUsers() + numberPage)
                 .then()
                 .log().all()
                 .extract().body().as(ListUsers.class);
