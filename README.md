@@ -11,6 +11,7 @@
 - REST Assured
 - JUnit
 - Allure
+- Lombok
 
 ## Report REST Assured (Allure)
 
