@@ -3,7 +3,6 @@ package tests.post;
 import api.post.login.request.Login;
 import api.post.login.response.SuccessLogin;
 import api.post.login.response.UnsuccessLogin;
-import api.post.register.response.UnsuccessRegister;
 import environment.ConstantParameters;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;

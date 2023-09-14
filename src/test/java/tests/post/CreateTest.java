@@ -29,7 +29,5 @@ public class CreateTest {
 
         Assertions.assertEquals(successUserCreate.getName(), name);
         Assertions.assertEquals(successUserCreate.getJob(), job);
-        // Assertions.assertEquals(successUserReg.getId(), expectedResultId);
-        // Assertions.assertEquals(successUserReg.getCreatedAt(), expectedResultAt);
     }
 }
